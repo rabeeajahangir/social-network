@@ -6,9 +6,14 @@ const reactionSchema =  new Schema({
         type: Schema.Types.ObjectId,
         default: () => new Types.ObjectId()
     },
+    reactionBody: {
+        type: String,
+        required: 'Text is required!',
+        maxLength: 280
+    },
     username: {
         type: String,
-        required: 'Your username is required!'
+        required: 'Username is required!'
     },
     createdAt: {
         type: Date,
