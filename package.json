@@ -1,0 +1,26 @@
+{
+  "name": "social-network",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "dependencies": {
+    "exp": "^57.2.1",
+    "install": "^0.13.0",
+    "mongoose": "^5.13.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rabeeajahangir/social-network.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rabeeajahangir/social-network/issues"
+  },
+  "homepage": "https://github.com/rabeeajahangir/social-network#readme"
+}
