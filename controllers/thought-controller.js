@@ -1,4 +1,5 @@
-const { thought, user } = require('../models');
+const { Thought, User } = require('../models');
+
 const thoughtController = {
     getAllThoughts(req, res) {
         Thought.find({})
@@ -14,7 +15,7 @@ const thoughtController = {
         .catch(err => res.status(400).json(err))
     },
 
-    getThoughtbyId({ params }, res) {
+    getThoughtById({ params }, res) {
         Thought.findById( { _id: params.thoughtId })
             .populate({
                 path: 'reactions',
@@ -40,12 +41,12 @@ const thoughtController = {
                     { new: true }
                 )
             })
-            .then(dbUserData => {
-                if (!dbUserData) {
+            .then(userData => {
+                if (!userData) {
                     res.status(404).json({ message: 'User not found!' })
                     return
                 }
-                res.json(dbUserData)
+                res.json(userData)
             })
             .catch(err => res.json(err))
     },
@@ -83,7 +84,7 @@ const thoughtController = {
     },
 
     deleteThought({ params }, res) {
-        Thought.findOneAndDelete({ _id: params.dbThoughtId })
+        Thought.findOneAndDelete({ _id: params.thoughtId })
         .then(dbThoughtData => {
             if (!dbThoughtData) {
                 return res.status(404).json({ message: 'No thought found!' })
