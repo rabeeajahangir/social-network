@@ -23,6 +23,7 @@ const thoughtController = {
             })
             .select('-__v')
             .then(dbThoughtData => {
+            console.log(dbThoughtData)
                 if (!dbThoughtData) {
                     res.status(404).json({ message: 'No thought found with that id!' })
                     return
@@ -35,6 +36,8 @@ const thoughtController = {
     createThought({ body }, res) {
         Thought.create(body)
             .then(({  _id }) => {
+                console.log(body)
+                console.log(_id)
             return User.findOneAndUpdate(
                     { _id: body.userId},
                     { $push: { thoughts: _id } }, 
