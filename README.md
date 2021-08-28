@@ -17,4 +17,6 @@ Express.js, MongoDB database, Mongoose packages, Javascript Library 'date-and-ti
 To use the application, follow install instructions and then in the root of the directory run 'npm start' to start your server. You can then copy the routes from the 'routes' folder of the project and test them in InsomniaCore. You can add new users, thoughts and reactions and even add new friends to your user profile. 
 
 ## Contributor
-Rabeea Jahangir [Github Link Click Here] (www.github.com/rabeeajahangir)
+Rabeea Jahangir 
+Github Link: (www.github.com/rabeeajahangir)
+
