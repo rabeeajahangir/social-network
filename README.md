@@ -4,7 +4,7 @@
 The purpose of this project was to build an API for a social network web application where users can share their thoughts, react to friends’ thoughts, and create a friend list.
 
 ## Technology Used:
-Express.js, MongoDB database, Mongoose packages, Javascript Library 'date-and-time' and Insomnia for testing.
+Express.js, MongoDB database, Mongoose packages, Javascript Library 'date-and-time' and InsomniaCore for testing.
 
 ##Screenshots:
 <img width="1440" alt="Screen Shot 2021-08-28 at 11 36 19 AM" src="https://user-images.githubusercontent.com/69980221/131223170-0487f002-8a8a-4686-b5ed-5d3fa2c1b736.png">
